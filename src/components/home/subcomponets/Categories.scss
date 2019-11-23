@@ -1,0 +1,21 @@
+.food {
+  display: flex;
+  box-sizing: border-box;
+  padding: 15px 15px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.food .food__title {
+  padding-left: 28px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.food .food__title h1 {
+  margin: 0px;
+}
+
+.food .food__title label {
+  font-size: 12px;
+}

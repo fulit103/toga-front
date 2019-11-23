@@ -1,0 +1,30 @@
+@import '../../../assets/styles/Vars.scss';
+
+.food__kind .food__kind__category {
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: $color-letter;
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.food__kind .food__kind__category figure {
+  margin: 0px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+}
+.food__kind .food__kind__category figure img {
+  padding-top: 10px;
+  box-sizing: border-box;
+  width: 50px;
+  height: 60px;
+}
+.food__kind .food__kind__category p {
+  margin: 0px;
+}
