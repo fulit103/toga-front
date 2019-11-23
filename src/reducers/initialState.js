@@ -105,4 +105,17 @@ const initialState = {
   ],
 };
 
-export default initialState;
+export default ()=>{
+  try {
+    const serializedData = localStorage.getItem("food_selected")
+    if (serializedData !== null){
+      const data = JSON.parse(serializedData);
+      return {
+        ...initialState,
+        food_selected: data
+      }; 
+    }
+  } catch (error) {}
+
+  return initialState;
+};

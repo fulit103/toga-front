@@ -8,9 +8,10 @@ import reducer from './reducers/index';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import * as serviceWorker from './serviceWorker';
 import initialState from './reducers/initialState';
+import { logger, saveLocalStorage } from './middlewares/reduxMiddleware';
 
-const store = createStore(reducer, initialState, composeWithDevTools(
-  //applyMiddleware(logger,services),
+const store = createStore(reducer, initialState(), composeWithDevTools(
+  applyMiddleware(logger, saveLocalStorage),
   // other store enhancers if any
 ));
 

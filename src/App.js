@@ -4,6 +4,7 @@ import logo from './logo.svg';
 import './App.scss';
 import Home from './components/home/Home';
 import FoodPage from './components/foodPage/FoodPage';
+import Shop from './components/shoppingCart/Shop';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={Home} />
         <Route exact path='/food/:id' component={FoodPage} />
+        <Route exact path='/food/:id/shop' component={Shop} />
       </Switch>
     </BrowserRouter>
   );
