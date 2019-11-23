@@ -1,6 +1,5 @@
 import React, {useEffect,useState} from 'react';
 import Search from './subcomponets/Search';
-import '../../App.scss';
 import Categories from './subcomponets/Categories';
 import KindItem from './subcomponets/KindItem';
 import FoodItem from './subcomponets/FoodItem';
@@ -10,6 +9,7 @@ import { connect } from 'react-redux';
 import {setFilterTextSearch, setKinds} from '../../actions/index';
 import debounce from 'lodash/debounce';
 import axios from 'axios';
+import '../../App.scss';
 
 const Home = (props) => {
   const { kinds, foods, home_filter } = props;  
@@ -33,7 +33,7 @@ const Home = (props) => {
   },[]);
 
   return (
-    <>
+    <div>
       <Search onChange={handleChangeText} text={home_filter.text_search}/>
       <Categories>
         <Types>
@@ -51,7 +51,7 @@ const Home = (props) => {
           { foods.map((item) => <FoodItem key={item.id} {...item} />)}
         </FoodScroll>
       </Categories>
-    </>
+    </div>
   );
 };
 

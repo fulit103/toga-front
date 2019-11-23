@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import backImg from '../../../assets/static/items/back.png';
 import plusImg from '../../../assets/static/items/plus.png';
 import lessImg from '../../../assets/static/items/less.png';
@@ -7,10 +7,11 @@ import '../Shop.scss';
 
 const ShoppingCart = (props) => {
   const { children} = props;
+  const history = useHistory();
   
   const redirectToAddress = () => {
     console.log('address');
-    //this.props.history.push('/address');
+    history.push('/address');
   }
 
   return (
