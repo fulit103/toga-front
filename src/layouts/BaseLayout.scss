@@ -50,14 +50,15 @@
 
       border-radius: 14px;
       box-shadow: 3px 3px 3px rgba(240, 98, 146,.95);
-      @media screen and ( max-width:400px  ){
+      @media screen and ( max-width:400px ){
         width: 100%;
         border-radius: 0px;
         margin-bottom: 0px;        
         box-shadow: none;
+        margin-top:0px;
       }
       
-      @media screen and ( max-width:1024px  ){
+      @media screen and (min-width:400px) and ( max-width:1024px  ){
         width: 700px;
       }
     }
