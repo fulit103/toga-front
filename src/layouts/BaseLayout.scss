@@ -1,5 +1,7 @@
+@import '../assets/styles/Vars.scss';
+
 .base-container{  
-  background-color: #eee;
+  background-color: $color-background-general;
   .base-container__header{    
     background-image: url(../assets/static/background.jpg);
     transform: translate3d(0,0px,0);
@@ -42,6 +44,7 @@
     justify-content: center;
     .base-container__center{
       width: 1200px;
+      overflow: hidden;
       
       margin-top:-150px;
       z-index: 1;
