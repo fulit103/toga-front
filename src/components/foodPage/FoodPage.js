@@ -57,7 +57,7 @@ const FoodPage = (props) => {
               className='stars'
               count={5}
               size={24}
-              color2='#50d0e3'
+              color2='#65E69F'
               // '#ffd700'
             />
           </div>

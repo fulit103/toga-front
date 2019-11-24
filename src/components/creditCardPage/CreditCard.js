@@ -32,9 +32,10 @@ const CreditCard = () => {
           </div>
         </div>
         <div className='form'>
-          <input type='number' name='' id='' placeholder='nùmero' />
-          <input type='text' name='' id='' placeholder='nombre' />
-          <input type='date' name='' id='' placeholder='fecha de expiraciòn' />
+            <input type='tel' name="credit-number"  id='' maxlength="19" placeholder='Digita el Nùmero' />
+            <input type='text' name='' id='' placeholder='Digita el Nombre' />
+            <input name="credit-cvc" class="cc-cvc" type="tel" pattern="\d*" maxlength="4" placeholder="CVC" />
+            <input name="credit-expires" class="cc-expires" type="tel" pattern="\d*" maxlength="7" placeholder="MM / YY" />
           <div className='button_pay_res'>
             <Link to='/delivery' className='button_pay'>
                 pagar
@@ -47,3 +48,6 @@ const CreditCard = () => {
 };
 
 export default CreditCard;
+
+
+

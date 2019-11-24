@@ -6,20 +6,20 @@ const Search = (props) => {
   const [valueText, setValueText] = useState(text);
 
   const onChangeSearchInput = (evt) => {
-    setValueText(evt.target.value);    
+    setValueText(evt.target.value);
     onChange(evt.target.value);
   };
 
   return (
     <div>
-      <section className='busqueda'>        
-        <input 
+      <section className='busqueda'>
+        <input
           type='text'
           value={valueText}
-          className='busqueda__input' 
-          placeholder='Ej: Torta Chocolate' 
-          onChange={onChangeSearchInput} 
-        />                        
+          className='busqueda__input'
+          placeholder='Ej: Torta Chocolate'
+          onChange={onChangeSearchInput}
+        />
       </section>
     </div>
   );

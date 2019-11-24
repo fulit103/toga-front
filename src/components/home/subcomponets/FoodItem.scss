@@ -55,7 +55,7 @@
   text-align: center;
 }
 .food__scroll .food__scroll__item .descripcion .food__scroll_price {
-  color: $color-background-pic-second;
+  color: black;
   font-size: 18px;
   font-weight: bold;
 }
@@ -68,19 +68,20 @@
   font-size: 13px;
 }
 .food__scroll .food__scroll__item .food__scroll__buy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
-  background-color: $color-background-button;
+  background-color: #3D369E;
   color: $color-letter;
   height: 40px;
   border: none;
   border-radius: 20px;
-  padding: 0px 15px;
+  padding: 0px 20px;
   outline: none;
-}
-
-.food__scroll__buy{
-  text-decoration: none;
-  padding-top: 10px !important;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .food__scroll .table:nth-child(2n) {

@@ -1,12 +1,12 @@
 @import '../../assets/styles/Vars.scss';
 
 .screen{
-  background-color: $color-background-button-th;
+  background-color: white;
   font-size: 1em;
 }
 .order__title{
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 30% 70%;
   height: 3.8em;
 }
 
@@ -34,7 +34,7 @@ h2{
 
 .order__list_numerpeople{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .add__people{
@@ -44,7 +44,7 @@ h2{
 
 .item{
   display:flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   margin: 0.7em;
   align-items: center;
 }
@@ -94,7 +94,7 @@ h2{
 
 .button__buy{
   box-sizing: border-box;
-  background-color: $color-background-button;
+  background-color: #3D369E;
   color: $color-letter;
   height: 40px;
   border: none;
@@ -114,6 +114,10 @@ h2{
 @media screen and (min-width:640px) {
   .button__buy{
     width: 50%;
+  }
+
+  .map-container-address .footer .button-primary {
+    width: 40%;
   }
 }
 
