@@ -1,0 +1,100 @@
+@import '../../assets/styles/Vars.scss';
+
+.container{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-auto-columns: 90%;
+  background-color:$color-background-pic;
+  margin: 20px;
+  border-radius: 30px;
+}
+
+.header_m{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.Arrow__back,
+.step__step,
+.ingredients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Arrow__back{
+  justify-content: start;
+}
+
+.ingredients{
+align-items: end;
+}
+
+.ingredients{
+  justify-content: flex-end;
+}
+
+.instruction__pic{
+display: flex;
+justify-content: center;
+}
+
+.instruction__pic img {
+  width: 60%;
+  height: 60%;
+}
+
+@media screen and (min-width:600px) {
+  .instruction__pic img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .instruction__pic img {
+    width: 80%;
+    height: 50%;
+  }
+
+  .instruction__pic  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .instruction{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:800px) {
+
+  .header_m{
+    grid-template-columns: 95% 5%;
+  }
+
+  .container{
+    display: grid;
+    grid-template-rows: 3em 500px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .Arrow__back{
+    display: none;
+  }
+
+  .instructions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
