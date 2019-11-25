@@ -1,7 +1,7 @@
 .map-container-address{
   box-sizing: border-box;
   position: relative;
-  height: 600px ;  
+  height: 600px ;
 
   .header{
     position: absolute;
@@ -30,7 +30,7 @@
     flex-direction: column;
     .button-primary {
       box-sizing: border-box;
-      background-color: #1f4dec;
+      background-color: #3D369E;
       color: white;
       height: 40px;
       border: none;
@@ -55,14 +55,22 @@
   display: grid;
   grid-auto-columns: 70%;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   margin: 20px;
   height: 40px;
   box-sizing: border-box;
+  position: absolute;
+  top: 25vh;
 }
 
 .address_input input {
-  font-size: 16px;
+  padding-left: 3px;
+  font-size: 20px;
+  outline: none;
+  border-radius: 15px;
+  border: none;
+  border-bottom: solid #B26DDE 4px;
+  padding: 0px 15px;
 }
 
 @media screen and (min-width:760px) {

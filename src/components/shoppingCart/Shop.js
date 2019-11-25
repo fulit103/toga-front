@@ -13,7 +13,7 @@ const Shop = (props) => {
           return (
             <ItemShop nombre={item.nombre} key={item.id} valor={item.valor} />
           )
-        })}        
+        })}
       </ShoppingCart>
     </>
   );

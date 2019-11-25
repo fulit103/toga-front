@@ -1,16 +1,21 @@
 @import '../assets/styles/Vars.scss';
 
-.base-container{  
+
+@media screen and (min-width:760px) {
+.base-container{
   background-color: $color-background-general;
-  .base-container__header{    
+}
+
+  .base-container__header{
     background-image: url(../assets/static/background.jpg);
-    transform: translate3d(0,0px,0);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 
     height: auto;
     max-height: 600px;
     min-height: 20vh;
     background-position: top center;
-
 
     border: 0;
     height: 30vh;
@@ -18,54 +23,39 @@
     display: flex;
     padding: 0;
     overflow: hidden;
-    position: relative;
     max-height: 1600px;
     align-items: center;
     background-size: cover;
     background-position: 50%;
-
-    background: linear-gradient(60deg,rgba(248, 187, 208,.56),rgba(240, 98, 146,.95));
-    
-    @media screen and ( max-width:400px ){
-      height: 0px;
-    }
+    background: linear-gradient(90deg,#6F3991,#B26DDE);
   }
 
-  .base-container__header:before{
-    background: rgba(0, 0, 0, 0.5);
+  .base-conatiner__color{
+    content: "";
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background: linear-gradient(90deg,#6F3991,#B26DDE);
+    opacity: 0.5;
   }
 
-  .base-container__header:after{
-    
-  }
-
-  .base-container__content{    
+  .base-container__content{
     display:flex;
     justify-content: center;
     .base-container__center{
-      width: 1200px;
+      width: 80%;
       overflow: hidden;
-      
       margin-top:-150px;
       z-index: 1;
       background: white;
       margin-bottom: 100px;
-
       border-radius: 14px;
-      box-shadow: 3px 3px 3px rgba(240, 98, 146,.95);
-      @media screen and ( max-width:400px ){
-        width: 100%;
-        border-radius: 0px;
-        margin-bottom: 0px;        
-        box-shadow: none;
-        margin-top:0px;
-      }
-      
-      @media screen and (min-width:400px) and ( max-width:1024px  ){
-        width: 700px;
-      }
+      -webkit-box-shadow: -2px 3px 34px 0px rgba(178,109,222,0.73);
+      -moz-box-shadow: -2px 3px 34px 0px rgba(178,109,222,0.73);
+      box-shadow: -2px 3px 34px 0px rgba(178,109,222,0.73);
     }
-    
   }
 }
 

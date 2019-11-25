@@ -7,7 +7,7 @@ const StepHeader = () => {
   return (
     <div className='header_m'>
       <div className='Arrow__back'>
-        <Link to='/food'>
+        <Link to='/food:id'>
           <img src={backImg} alt='' />
         </Link>
       </div>

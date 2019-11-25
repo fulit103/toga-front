@@ -12,7 +12,7 @@ const KindItem = (props) => {
   }
 
   return (
-    <section className='food__kind__category' onClick={handleClick} style={{backgroundColor: selected_kind===_id?'yellow':'white' }}>
+    <section className='food__kind__category' onClick={handleClick} style={{backgroundColor: selected_kind===_id?'#7167EB':'white',color:selected_kind===_id?'white':'#3D369E' }}>
       <figure className='food__kind_img'>
         <img src={kindFood} alt='comida caliente' />
       </figure>

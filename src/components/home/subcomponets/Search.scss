@@ -3,17 +3,30 @@
 .busqueda {
   display: flex;
   box-sizing: border-box;
-  padding: 0px 15px;
+  padding: 0px 2%;
+  padding-top: 10px;
   margin-top: 10px;
+  align-items: center;
+  justify-content: center;
 }
+
 .busqueda .busqueda__input {
-  width: 100%;
+  width: 95%;
   height: 35px;
-  border-radius: 20px;
   padding: 10px;
   box-sizing: border-box;
   outline: none;
   border: 2px solid $color-letter;
   font-family: "Muli", sans-serif;
   font-size: 18px;
+  border-radius: 15px;
+  border: 1px solid #B26DDE;
+}
+
+@media screen and (min-width:765px) {
+  .busqueda .busqueda__input {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid #B26DDE;
+  }
 }
