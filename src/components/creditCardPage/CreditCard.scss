@@ -21,7 +21,7 @@
 }
 
 .credit-card {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
 
@@ -122,6 +122,10 @@
 @media screen and (min-width:750px) {
   .body{
     background-color: white;
+  }
+
+  .credit-card {
+    display: flex;
   }
 
   .form{
