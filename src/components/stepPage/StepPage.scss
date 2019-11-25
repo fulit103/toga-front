@@ -5,13 +5,13 @@
   justify-content: center;
   align-items: center;
   grid-auto-columns: 100%;
-  margin: 20px;
+  margin: 0px;
   border-radius: 30px;
 }
 
 .header_m{
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 20% 50% 30%;
 }
 
 .Arrow__back,
@@ -22,26 +22,27 @@
   align-items: center;
 }
 
-.Arrow__back{
-  justify-content: start;
-}
-
-.ingredients{
-align-items: end;
-}
-
-.ingredients{
-  justify-content: flex-end;
-}
-
 .instruction__pic{
 display: flex;
 justify-content: center;
+
 }
 
 .instruction__pic img {
-  width: 60%;
-  height: 60%;
+  width: 100%;
+  height:100%;
+  box-shadow: -2px 33px 48px -11px rgba(178,109,222,1);
+  margin-top: -60px;
+}
+
+.instructions{
+  background-color: #D8B9EB;
+  padding: 3px 10px;
+}
+
+.instruction p{
+  margin: 0px 10px;
+  padding-top: 10px;
 }
 
 @media screen and (min-width:600px) {
@@ -54,6 +55,7 @@ justify-content: center;
   .instruction__pic img {
     width: 80%;
     height: 80%;
+    box-shadow: none;
   }
 
   .instruction__pic  {
@@ -62,17 +64,32 @@ justify-content: center;
     align-items: center;
   }
 
-  .instruction{
+  .instructions{
     display: flex;
     justify-content: center;
-    width: 80%;
+    padding: 0px 10px;
   }
 }
 
 @media screen and (min-width:800px) {
+  .instruction__pic img {
+    height: 100%;
+  }
+
+  .instructions{
+    background: none;
+  }
+}
+
+
+@media screen and (min-width:1000px) {
 
   .header_m{
     grid-template-columns: 95% 5%;
+  }
+
+  .instruction__pic img {
+    height: 120%;
   }
 
   .container{
@@ -84,7 +101,7 @@ justify-content: center;
 
   .content{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: 50% 50%;
   }
 
   .Arrow__back{
@@ -95,5 +112,6 @@ justify-content: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
   }
 }

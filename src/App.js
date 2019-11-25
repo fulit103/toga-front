@@ -15,13 +15,13 @@ import NoFound from './components/global/NotFound';
 function App() {
   return (
     <BaseLayout>
-      <BrowserRouter>    
+      <BrowserRouter>
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/food/:id' component={FoodPage} />
           <Route exact path='/food/:id/shop' component={Shop} />
-          <Route exact path='/address' component={AddressPage} /> 
-          <Route exact path='/pay' component={CreditCard} />               
+          <Route exact path='/address' component={AddressPage} />
+          <Route exact path='/pay' component={CreditCard} />
           <Route exact path='/step' component={StepPage} />
           <Route exact path='/login' component={Login} />
           <Route component={NoFound} />
