@@ -22,7 +22,7 @@ const Home = (props) => {
   useEffect( () => {      
     
     const fetchData = async () => {
-      let res1 = await axios.get("http://localhost:3000/api/kinds");  
+      let res1 = await axios.get("https://toga-api.now.sh/api/kinds");  
       //let res2 = await axios.get("http://localhost:3000/api/foods")
       let { data } = res1;
       props.setKinds(data)
